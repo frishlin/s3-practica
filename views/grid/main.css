@@ -1,0 +1,100 @@
+/*
+COLORES
+#FFFF00 - Amarillo
+#AFFF00 - verde1
+#1EE2A6 - verde2
+#01B6AD - azul
+#9C42D1 - morado
+#D126A9 - violeta
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white;
+}
+
+
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.row::before, .row::after{
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+[class*="col-"]{
+  float: left;
+  min-height: 7px;
+  /* gutters */
+  padding: 2%;
+  border-top: hidden;
+  border-bottom: hidden;
+  margin-left: .5%;
+  margin-right: .5%;
+  margin-bottom:1%;
+}
+
+.col-1{
+  background-color: #FFFF00;
+  width: 7.33333333%;
+}
+
+.col-2{
+  background-color: #AFFF00;
+  width: 15.66666667%;
+  }
+
+.col-3{
+  background-color: #1EE2A6;
+  width: 24%;
+}
+
+.col-4{
+  background-color: #01B6AD;
+  width: 32.33333333%;
+}
+
+.col-5{
+  width: 41.66666667%;
+}
+
+.col-6{
+  background-color: #9C42D1;
+  width: 49%;
+}
+
+.col-7{
+  width: 58.33333333%;
+}
+
+.col-8{
+  width: 66.66666667%;
+}
+
+.col-9{
+  width: 75%;
+}
+
+.col-10{
+  width: 83.33333333%;
+}
+
+.col-11{
+  width: 91.66666667%;
+}
+
+.col-12{
+  background-color: #D126A9;
+  width: 99%;
+}

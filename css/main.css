@@ -1,0 +1,21 @@
+body{
+  margin: 0;
+  background-color: yellow;
+
+}
+
+header{
+  height: 100px;
+  background-color: #FFC107;
+  color: white;
+  font-size: 3em;
+  text-align: center;
+  line-height: 100px;
+}
+
+a{
+  height: 100px;
+  float: left;
+  margin-left: 290px;
+  line-height: 300px;
+}

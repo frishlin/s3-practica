@@ -1,0 +1,173 @@
+/*
+COLORES
+#F7EA00 - Amarillo
+#34EAA9 - Aguamarina
+#E486EA - Violeta
+#36B6E8 - Azul
+#E836B1 - Morado
+#F7B93C - Naranja
+*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white;
+  font-size:7em;
+  font-family: "Handlee";
+  text-align: center;
+  color: white;
+}
+
+.container{
+  width: 100%;
+  /* max-width: 1200px; */
+  margin: 1% auto;
+}
+
+.row::before, .row::after{
+  content: "";
+  display: table;
+}
+
+.cont{
+  width: 57.33333333%;
+}
+
+.col-5{
+  float: right;
+}
+
+
+/* .C, .D, .E{
+  float: right;
+  height: 228px;
+  line-height: 260px;
+  margin-right: 2%;
+  margin-bottom: 1%;
+} */
+
+
+.C{
+  background-color: #36B6E8;
+}
+
+.D{
+  background-color: #E836B1;
+}
+
+.E{
+  background-color: #F7B93C;
+}
+
+[class*="col-"]{
+  min-height: 7px;
+  /* gutters */
+  /* margin-bottom:1%; */
+}
+
+
+.col-1{
+  background-color: #FFFF00;
+  width: 8.33333333%;
+}
+.col-2{
+  background-color: #AFFF00;
+  width: 16.66666667%;
+  }
+.col-3{
+  background-color: #1EE2A6;
+  width: 25%;
+}
+
+/* C D E */
+.col-4{
+  width: 31.33333333%;
+  float: right;
+  height: 232px;
+  line-height: 260px;
+  margin-right: 2%;
+  margin-bottom: .5%;
+}
+/* F */
+.col-5{
+  width: 41.66666667%;
+  background-color: #E486EA;
+  height: 438px;
+  margin-right: 1%;
+  margin-bottom: .5%;
+  line-height: 480px;
+}
+
+.col-6{
+  width: 50%;
+}
+
+/* B */
+.col-7{
+  width: 56.33333333%;
+  background-color: #34EAA9;
+  height: 200px;
+  line-height: 235px;
+  margin-bottom: .5%;
+}
+
+.col-8{
+  width: 66.66666667%;
+}
+
+.col-9{
+  width: 75%;
+}
+
+.col-10{
+  width: 83.33333333%;
+}
+
+.col-11{
+  width: 91.66666667%;
+}
+
+/* A */
+.col-12{
+  background-color: #F7EA00;
+  width: 99%;
+  height: 180px;
+  line-height: 210px;
+  margin-bottom: .5%;
+}
+
+@media (max-width:480px){
+  .col-12{
+    height: 80px;
+    line-height: 90px;
+    font-size: 1em;
+    width: 100%;
+    float: left;
+}
+
+.col-7{
+  width: 100%;
+  height: 180px;
+  line-height: 180px;
+  float: right;
+
+}
+
+
+  .cont{
+    width: 100%;
+    height: 100px;
+    line-height: 180px;
+
+}
+
+  .col-5{
+    width: 100%;
+    height: 180px;
+    line-height: 180px;
+    float: left;
+}
