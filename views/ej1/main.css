@@ -1,73 +1,58 @@
-/*
-COLORES
-#F7EA00 - Amarillo
-#34EAA9 - Aguamarina
-#E486EA - Violeta
-*/
-
 body{
-  margin-top: 7px;
-  margin-left: 1%;
-  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.container {
+    margin: 7px 7px;
+    display: grid;
+    grid-template-columns: repeat(12);
+    grid-template-rows: 150px 490px;
+    grid-gap: 7px;
+    grid-template-areas:
+        "a a a a a a a a a a a a"
+        "b b b b b b b b c c c c";
 }
 
-.container{
-  width: 100%;
-  font-family: 'Handlee';
-  font-size: 5em;
+.format{
   color: white;
+  font-family: "Handlee";
+  font-size: 9em;
   text-align: center;
-}
-
-.post-left, .post-right{
-  float: left;
-  box-sizing: border-box;
-  height: 485px;
-  margin-bottom: 1%;
-  line-height: 485px;
-}
-
-.header{
-  background-color: #F7EA00;
-  height: 140px;
-  margin-bottom: 1%;
-  line-height: 140px;
-}
-
-
-.post-left{
-  width: 60%;
-  background-color: #34EAA9;
-  margin-right: 1%;
 
 }
 
-.post-right{
-  width: 39%;
+.a{
+  grid-area: a;
+  background-color: yellow;
+}
+
+.b{
+  grid-area: b;
+  background-color: #27DAEC;
+}
+
+.c{
+  grid-area: c;
   background-color: #E486EA;
 }
 
-
-
-@media (max-width:480px){
-  .header{
-    height: 80px;
-    line-height: 90px;
-    font-size: 1em;
-    width: 100%;
-}
-  .post-left{
-    width: 100%;
-    height: 350px;
-    line-height: 360px;
-}
-  .post-right{
-    width: 100%;
-    height: 180px;
-    line-height: 180px;
-}
-
-  .header, .post-left, .post-right{
-    margin-bottom: 1%;
-    margin-left: 1%
+@media screen and (max-width: 768px) {
+    .container {
+      margin: 3px 3px;
+      grid-template-columns: repeat(1);
+      grid-template-rows: 150px 340px 188px;
+        grid-template-areas:
+            "a a a a a a a a a a a a"
+            "b b b b b b b b b b b b"
+            "c c c c c c c c c c c c";
+    }
+    .format-mobil-a{
+      line-height: 180px;
+    }
+    .format-mobil-b{
+      line-height: 380px;
+    }
+    .format-mobil-c{
+      line-height: 188px;
+    }
 }
