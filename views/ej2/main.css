@@ -16,7 +16,7 @@ body{
     margin: 7px 7px;
     display: grid;
     grid-template-columns: repeat(12);
-    grid-template-rows: 150px 200px 235px;
+    grid-template-rows: 150px 200px 283px;
     grid-gap: 7px;
     grid-template-areas:
         "a a a a a a a a a a a a"
